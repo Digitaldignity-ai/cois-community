@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discuss an idea or ask a question
+    url: https://github.com/Digitaldignity-ai/cois-community/discussions
+    about: Open-ended public conversations are welcome here.
+  - name: Privately report a vulnerability or data exposure
+    url: https://github.com/Digitaldignity-ai/cois-community/security/advisories/new
+    about: Keep confidential security details out of public issues.

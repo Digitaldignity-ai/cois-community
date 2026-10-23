@@ -1,0 +1,36 @@
+name: Privacy design suggestion
+description: Improve consent, retention, deletion, sharing or user control.
+title: "[Privacy] "
+labels: ["type: suggestion", "area: privacy", "status: proposed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public design discussion, not a confidential incident report.
+        For suspected data exposure use [private reporting](https://github.com/Digitaldignity-ai/cois-community/security/advisories/new). Do not attach actual memory records or private conversations.
+  - type: textarea
+    id: concern
+    attributes:
+      label: What privacy need should the design address?
+      description: Explain using an invented scenario, without personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: control
+    attributes:
+      label: What choice or control should the person have?
+      description: For example, what is kept, who can retrieve it, or how a sharing decision is changed.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Tradeoffs and a useful acceptance check
+      description: What would show that the proposed control works? What could remain uncertain?
+  - type: checkboxes
+    id: public-check
+    attributes:
+      label: Before posting
+      options:
+        - label: This is a public design suggestion and contains no private information or confidential exposure details.
+          required: true

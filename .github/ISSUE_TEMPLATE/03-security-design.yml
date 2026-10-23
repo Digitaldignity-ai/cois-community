@@ -1,0 +1,36 @@
+name: Security design suggestion
+description: Discuss safe defaults, access boundaries and recovery designs.
+title: "[Security design] "
+labels: ["type: suggestion", "area: security", "status: proposed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Stop here if you found a suspected vulnerability or data exposure: use [private reporting](https://github.com/Digitaldignity-ai/cois-community/security/advisories/new).
+        This public form is for general design improvements. Use hypothetical examples without real targets, credentials or private infrastructure details.
+  - type: textarea
+    id: boundary
+    attributes:
+      label: What boundary or behavior should improve?
+      description: Describe the intended protection and whom it helps.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed design
+      description: Explain the idea and assumptions without disclosing a live vulnerability.
+    validations:
+      required: true
+  - type: textarea
+    id: check
+    attributes:
+      label: Tradeoffs and a safe verification approach
+      description: A proposed synthetic test is useful. Do not test others' systems without authorization.
+  - type: checkboxes
+    id: public-check
+    attributes:
+      label: Before posting
+      options:
+        - label: This is a general design suggestion, safe to publish, rather than a confidential vulnerability or exposure report.
+          required: true
